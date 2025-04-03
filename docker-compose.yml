@@ -5,5 +5,7 @@
     environment:
       - WORKER1_URL=http://worker1:5000
       - WORKER2_URL=http://worker2:5000
+      - WORKER3_URL=http://worker2:5000
+      - WORKER4_URL=http://worker2:5000
     networks:
      - swarmpit-net
