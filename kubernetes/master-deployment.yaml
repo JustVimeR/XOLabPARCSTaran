@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: mandelbrot-master
+spec:
+  containers:
+  - name: master
+    image: vladyslavtaran/mandelbrot-master:latest
+    command: ["python", "master.py"]

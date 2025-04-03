@@ -1,0 +1,9 @@
+  master:
+    image: vladyslavtaran/mandelbrot-master:latest
+    ports:
+      - "5050:5050"
+    environment:
+      - WORKER1_URL=http://worker1:5000
+      - WORKER2_URL=http://worker2:5000
+    networks:
+     - swarmpit-net
